@@ -1,14 +1,13 @@
-import { StyleSheet, Text, View,Button } from "react-native";
+import { StyleSheet, Text, View, Button } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View>
-        <Text>Another Text Component</Text>
+        <Text style={styles.dummyText}>Another Text Component</Text>
       </View>
-
-      <Text>Welcome to Expo React</Text>
-      <Button title="Tab me"/>
+      <Text style={styles.dummyText}>Welcome to Expo React</Text>
+      <Button title="Tab me" />
     </View>
   );
 }
@@ -19,5 +18,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#42f5ad",
     alignItems: "center",
     justifyContent: "center",
+  },
+  dummyText: {
+    margin: 16,
+    borderWidth: 1,
+    borderColor: "red",
+    padding: 16,
   },
 });
