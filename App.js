@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View,Button } from "react-native";
 
 export default function App() {
   return (
@@ -8,6 +8,7 @@ export default function App() {
       </View>
 
       <Text>Welcome to Expo React</Text>
+      <Button title="Tab me"/>
     </View>
   );
 }
